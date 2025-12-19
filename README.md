@@ -19,6 +19,15 @@ MedWay is an intelligent emergency response routing system that computes the fas
 - Frontend: HTML, CSS, JavaScript, Leaflet.js
 - Maps: OpenStreetMap
 
+## System Architecture
+
+1. Road network is extracted from OpenStreetMap and converted into a weighted graph  
+2. Edge weights represent travel time  
+3. Ambulance and hospital locations are mapped as nodes  
+4. Bidirectional A* computes the fastest route  
+5. Frontend visualizes routes, ETAs, and entities on an interactive map  
+
+
 ## How to Run Locally
 ```bash
 cd Backend
